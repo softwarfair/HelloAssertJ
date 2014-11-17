@@ -1,6 +1,5 @@
 apply plugin: 'java'
 
-sourceCompatibility = 1.7
 version = '1.0'
 
 
@@ -19,5 +18,6 @@ dependencies {
             'org.testng:testng:6.8.8',
             'org.assertj:assertj-joda-time:1.1.0',
             'org.assertj:assertj-guava:1.3.0',
+            'org.hamcrest:hamcrest-all:1.3'
     ])
 }

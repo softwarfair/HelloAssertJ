@@ -38,7 +38,7 @@ public class DeveloperTest {
     public void test_age() throws Exception {
         assertThat(odersky.age())
                 .isGreaterThan(50)
-                .isBetween(50, 80)
+                .isBetween(55, 80)
                 .isNotZero()
                 .isPositive();
     }
