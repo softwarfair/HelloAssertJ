@@ -8,8 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.endsWith;
-import static org.hamcrest.Matchers.startsWith;
+import static org.hamcrest.Matchers.*;
 import static org.joda.time.DateTime.now;
 
 public class DeveloperTestOldStyle {
@@ -38,10 +37,10 @@ public class DeveloperTestOldStyle {
 
     @Test
     public void test_age() throws Exception {
-        assertThat(odersky.age(), Matchers.greaterThan(50));
-        assertThat(odersky.age(), Matchers.greaterThan(55));
-        assertThat(odersky.age(), Matchers.lessThan(80));
-        assertThat(odersky.age(), Matchers.not(0));
-        assertThat(odersky.age(), Matchers.greaterThan(0));
+        assertThat(odersky.age(), greaterThan(50));
+        assertThat(odersky.age(), greaterThan(55));
+        assertThat(odersky.age(), lessThan(80));
+        assertThat(odersky.age(), not(0));
+        assertThat(odersky.age(), greaterThan(0));
     }
 }
